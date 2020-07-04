@@ -4,8 +4,8 @@ class Article extends React.Component {
   render () {
     return (
       <React.Fragment>
-        Title: {this.props.title}
-        Description: {this.props.description}
+        {this.props.title}
+        {this.props.description}
       </React.Fragment>
     );
   }
