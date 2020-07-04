@@ -28,9 +28,3 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
-
-.babelrc
-.postcssrc.yml
-bin/webpack
-bin/webpack-dev-server
-yarn.lock
