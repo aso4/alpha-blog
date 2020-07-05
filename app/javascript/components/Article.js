@@ -13,8 +13,11 @@ class Article extends React.Component {
         <div className="article-body">
           {this.props.description}
           <div className="article-meta-details">
-            <small>Created by: {this.props.author}, {this.props.created_at} ago,
-                  last updated: {this.props.updated_at} %> ago</small>
+            <small>
+              Created by: {this.props.author},&nbsp;
+               <Timestamp relative date={this.props.created_at} />,
+              last updated: <Timestamp relative date={this.props.updated_at} />
+            </small>
           </div>
         </div>
       </React.Fragment>
