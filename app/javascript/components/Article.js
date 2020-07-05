@@ -23,6 +23,11 @@ class Article extends React.Component {
       </React.Fragment>
     );
   }
+
+  componentDidMount() {
+    var self = this;
+    setInterval(function() { self.forceUpdate() }, 5000);
+  }
 }
 
 Article.propTypes = {
