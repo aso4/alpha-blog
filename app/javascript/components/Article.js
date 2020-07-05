@@ -1,5 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+
+import Timestamp from "react-timestamp"
+
 class Article extends React.Component {
   render () {
     return (
