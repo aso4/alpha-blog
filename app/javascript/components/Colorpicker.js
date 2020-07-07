@@ -8,11 +8,18 @@ class Colorpicker extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = { selector: props.selector };
+
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange = (color) => {
-    console.log(color.hex);
+    document.body.style.background = color.hex;
+    // $('.foo#bar')
+    // when instanced, props contains selector, find element
+    let elem = document.querySelector('#' + this.state.selector);
+    // make element equal to that color
+    elem.value = color.hex;
   }
 
   render() {
